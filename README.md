@@ -13,22 +13,18 @@ phone) into a reportable form at minimal cost. Once structured address
 data is produced, searching databases such as GNAF for geocoding
 information is much easier!
 
+## Recommended Python Requirements
+Early versions of Python and TensorFlow are required because the AddressNet package was built 5 years ago with old versions.
+The following versions **need to be installed first** for a seamless installation of AddressNet:    
+
+Python version: 3.9 or earlier  
+Tensorflow version: 2.5 or earlier  
+
 ## Installation
 Get the latest code by installing directly from git using
 ```
-pip install git+https://github.com/jasonrig/address-net.git
+pip install git+https://github.com/Davidxing1007/address-net.git
 ```
-
-Or from PyPI:
-```
-pip install address-net
-pip install address-net[tf]     # install TensorFlow (CPU version)
-pip install address-net[tf_gpu] # install TensorFlow (GPU version)
-```
-
-You will need an appropriate version of TensorFlow installed, ideally greater
-than version 1.12. This is not automatically installed since the CPU and GPU
-versions of TensorFlow exist in separate packages.
 
 ## Model output
 This model performs character-level classification, assigning each
